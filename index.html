@@ -1,23 +1,58 @@
 <!DOCTYPE html>
-<html>
-  <head lang="en">
+<html lang="en">
+  <head>
     <title>Stopwatch</title>
     <link rel="stylesheet" href="stopwatch.css">
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
   </head>
   <body>
+  <main>
+    <section class="header">
+      <div class="heading">
+        <p>STOPWATCH</p>
+      </div>
+    </section>
+    <section class="stopwatch">
+      <div class="stop-watch-box">
+        <button onclick="start()" class="start">Start</button>
+        <button onclick="stop()">Stop</button>
+        <button onclick="restart()">Restart</button>
+        <button onclick="reset()">Reset</button>
+        <p class="time"></p>
+      </div>
+    </section>
+    <section class="footer">
+      <div class="made-by">
+        <p>Made by Bhrigu Sharma</p>
+      </div>
+      <div class="greetings">
+        <div class="greeting major">
+          <p id='work-together'>
+            Let's work together
+          </p>
+        </div>
+        <div class="greeting minor">
+          <p id="coffee">
+            How do you take your coffee?
+          </p>
+        </div>
+      </div>
+      <div class="socials">
+        <a href="https://www.linkedin.com/in/bhrigu-sharma-79152a1a8/" target="_blank">
+          <div class="social">Linkedin</div>
+        </a>
+        <a href="https://github.com/bhrigu77" target="_blank">
+          <div class="social">GitHub</div>
+        </a>
+        
+        
+      </div>
+    </section>
+  </main>
+  
+  
     
-
-   <div class="stop-watch-box">
-    <button onclick="start()" class="start">Start</button>
-    <button onclick="stop()">Stop</button>
-    <button onclick="restart()">Restart</button>
-    <button onclick="reset()">Reset</button>
-    <p class="time"></p>
-
-  </div>
-
     <script src="stopwatch.js"></script>
   </body>
 </html>
